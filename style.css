@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+#mobile-nav {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    position: relative;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #5A7ACD;
+        transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F2F2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2B2A2A;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5A7ACD;
+}
+@keyframes music-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(90, 122, 205, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(90, 122, 205, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(90, 122, 205, 0); }
+}
+
+.music-active {
+    animation: music-pulse 2s infinite;
+    border-color: #5A7ACD !important;
+}
