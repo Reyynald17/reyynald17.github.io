@@ -75,3 +75,18 @@ section.visible {
     animation: music-pulse 2s infinite;
     border-color: #5A7ACD !important;
 }
+.night-mode {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #000;
+}
+.night-mode img, 
+.night-mode video, 
+.night-mode figure,
+.night-mode [style*="background-image"],
+.night-mode .project-card,
+.night-mode #home figure div {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+html {
+    transition: filter 0.5s ease;
+}

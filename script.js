@@ -51,3 +51,10 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function() {
+    $('#night-toggle').on('click', function() {
+        $('html').toggleClass('night-mode');
+		
+        $(this).toggleClass('bg-[#5A7ACD] bg-[#2B2A2A]');
+    });
+});
