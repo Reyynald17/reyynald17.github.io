@@ -75,18 +75,19 @@ section.visible {
     animation: music-pulse 2s infinite;
     border-color: #5A7ACD !important;
 }
-.night-mode {
+html.invert-mode {
     filter: invert(1) hue-rotate(180deg);
-    background-color: #000;
 }
-.night-mode img, 
-.night-mode video, 
-.night-mode figure,
-.night-mode [style*="background-image"],
-.night-mode .project-card,
-.night-mode #home figure div {
-    filter: invert(1) hue-rotate(180deg) !important;
+
+html.invert-mode img,
+html.invert-mode object,
+html.invert-mode svg,
+html.invert-mode iframe,
+html.invert-mode .project-card {
+    filter: invert(1) hue-rotate(180deg);
 }
-html {
-    transition: filter 0.5s ease;
+
+html, 
+html * {
+    transition: filter 0.3s ease;
 }
