@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,121 +8,149 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body class="bg-[#F5F2F2] text-[#2B2A2A] font-sans antialiased">
-	<div id="splash-container" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#2B2A2A] transition-opacity duration-700">
-    <object id="splash-svg" type="image/svg+xml" data="splash.svg" class="w-full h-full max-w-2xl max-h-2xl"></object>
-</div>
-	<header class="fixed top-0 w-full z-40 bg-[#F5F2F2]/80 backdrop-blur-md border-b border-[#2B2A2A]/10 h-16 flex items-center">
-        <div class="max-w-5xl mx-auto px-6 w-full flex justify-between items-center">
-            <strong class="text-xl tracking-tighter uppercase font-bold text-[#2B2A2A]">Farii? (Profile)</strong>
-            <ul class="hidden md:flex space-x-8 font-bold">
-                <li><a href="#home" class="nav-link hover:text-[#5A7ACD] transition-colors">Home</a></li>
-                <li><a href="#about" class="nav-link hover:text-[#5A7ACD] transition-colors">About Me</a></li>
-                <li><a href="#projects" class="nav-link hover:text-[#5A7ACD] transition-colors">My Project</a></li>
-            </ul>
-        </div>
-    </header>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-    <nav id="mobile-nav" class="fixed bottom-6 left-[5%] w-[90%] z-50 md:hidden transition-all duration-500 ">
-        <ul class="bg-[#F5F2F2]/90 backdrop-blur-xl border border-[#2B2A2A]/10 rounded-full h-16 flex items-center justify-around px-4 shadow-2xl font-bold">
-            <li><a href="#home" class="nav-link py-2 px-4 hover:text-[#5A7ACD]">Home</a></li>
-            <li><a href="#about" class="nav-link py-2 px-4 hover:text-[#5A7ACD]">About</a></li>
-            <li><a href="#projects" class="nav-link py-2 px-4 hover:text-[#5A7ACD]">Project</a></li>
-        </ul>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Farand Altaf Emian">
+        <span class="brand-mark">FA</span>
+        <span>farand.dev</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#projects">Project</a>
+        <a class="nav-cta" href="#contact">Kontak</a>
+      </div>
     </nav>
+  </header>
 
-    <main>
-        <section id="home" class="min-h-screen flex items-center justify-center pt-16">
-            <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                <header class="space-y-6">
-                    <h1 class="text-6xl font-bold leading-tight">
-                        Hi Fellows <br>
-                        <span class="text-[#5A7ACD] italic">Fari's Here.</span>
-                    </h1>
-                    <p class="text-lg text-[#2B2A2A]/70 max-w-md">Arcadia Developer-Arcadia Owner<br>Saya seorang Programmer Muda, dan merupakan Pelajar SMK Negeri 9 Medan.</p>
-                    <hr class="w-20 h-1 bg-[#FEB05D] border-none">
-                </header>
-                <figure class="relative justify-self-center md:justify-self-end max-md:-order-1">
-                    <div class="w-72 h-72 md:w-96 md:h-96 bg-[#2B2A2A] rounded-full shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-110">
-                        <img src="self.jpeg" alt="Personal Identity Image" class="w-full h-full object-cover">
-                    </div>
-                </figure>
-            </div>
-        </section>
-
-<section id="about" class="relative py-24 text-[#F5F2F2] overflow-hidden">
-    <div class="absolute inset-0 z-0">
-        <img src="aboutme.gif" alt="Background" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-[#2B2A2A]/80"></div>
-    </div>
-
-    <article class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-8">About Me</h2>
-        <div class="max-w-2xl mx-auto space-y-4 opacity-90 leading-relaxed">
-            <p>Saya Farand Altaf Emian, atau akrab dikenal dengan <i><b>Fari</b></i>, Saya adalah Seorang Developer yang berfokus pada Frontend, dengan sedikit pengetahuan terkait Backend Programming</p>
-            <p>Situs ini merupakan wujud dari pengetahuan saya terkait penggunaan beberapa Framework seperti Tailwind dan JQuery.</p>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available to learn & build</p>
+        <h1>Halo, saya <span>Farand.</span><br>Saya membangun web<br>dan terus berkembang.</h1>
+        <p class="hero-description">Pelajar Rekayasa Perangkat Lunak yang tertarik pada pengembangan web, teknologi, dan membangun project yang berguna.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Lihat Project <span>↗</span></a>
+          <a class="button secondary" href="#about">Tentang Saya</a>
         </div>
-    </article>
-</section>
+        <div class="hero-meta">
+          <span>📍 Medan, Indonesia</span>
+          <span>•</span>
+          <span>SMK Negeri 9 Medan</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="portrait-frame">
+          <div class="portrait-topline"><span>PROFILE / 01</span><span>RPL</span></div>
+          <img src="self.jpeg" alt="Foto Farand Altaf Emian" class="portrait">
+          <div class="portrait-bottomline"><span>FARAND ALTAF EMIAN</span><span>2026</span></div>
+        </div>
+        <div class="floating-card card-code"><span class="code-dot"></span> building with curiosity</div>
+        <div class="floating-card card-stack">HTML · CSS · JS</div>
+      </div>
+    </section>
 
-        <section id="projects" class="py-24">
-            <div class="max-w-5xl mx-auto px-6">
-                <header class="flex justify-between items-end mb-12">
-                    <h2 class="text-4xl font-bold">My Project</h2>
-                    <code class="text-[#5A7ACD] font-mono text-lg">[ 02 Projects ]</code>
-                </header>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <article class="project-card group bg-white border border-[#2B2A2A]/5 p-6 rounded-xl hover:shadow-xl transition-all">
-                        <figure class="w-full h-48 bg-[#F5F2F2] mb-4 rounded-lg overflow-hidden">
-                            <img src="map.jpeg" alt="gambar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </figure>
-                        <h3 class="font-bold mb-2 uppercase">arcadia nation roleplay</h3>
-                        <p class="text-sm opacity-60">Arcadia adalah komunitas yang berdedikasi untuk menyediakan platform roleplay yang adil, dan imersif bagi semua anggotanya. </p>
-                    </article>
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">01 / ABOUT ME</p>
+          <h2>Developer muda dengan rasa ingin tahu yang besar.</h2>
+        </div>
+        <div class="section-copy">
+          <p>Saya Farand Altaf Emian, seorang pelajar Rekayasa Perangkat Lunak yang berfokus pada pengembangan web. Saya menikmati proses mengubah ide menjadi tampilan yang interaktif, rapi, dan mudah digunakan.</p>
+          <p>Saya terus memperluas kemampuan dari frontend ke backend, database, dan deployment. Bagi saya, setiap project adalah kesempatan untuk belajar teknologi baru dan meningkatkan cara saya memecahkan masalah.</p>
+        </div>
+      </div>
+    </section>
 
-                    <article class="project-card group bg-white border border-[#2B2A2A]/5 p-6 rounded-xl hover:shadow-xl transition-all">
-                        <figure class="w-full h-48 bg-[#F5F2F2] mb-4 rounded-lg overflow-hidden">
-                            <img src="lanpage.png" alt="gambar" class="w-full h-full bg-black object-cover group-hover:scale-110 transition-transform duration-500">
-                        </figure>
-                        <h3 class="font-bold mb-2 align-center uppercase">arcadia calculation system</h3>
-                        <p class="text-sm opacity-60">Analisis Command demi mendapatkan nilai AP per roleplayer di Arcadia.</p>
-                    </article>
-
-                </div>
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">02 / EDUCATION</p><h2>Perjalanan pendidikan</h2></div>
+          <p>Fondasi yang terus saya kembangkan melalui praktik dan project.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">PENDIDIKAN TERKINI</span>
+              <h3>SMK Negeri 9 Medan</h3>
+              <p>Rekayasa Perangkat Lunak (RPL)</p>
+              <span class="tag">Current</span>
             </div>
-        </section>
-    </main>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">PENDIDIKAN TERAKHIR</span>
+              <h3>SMP Negeri 2 Sunggal</h3>
+              <p>Pendidikan Sekolah Menengah Pertama</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <footer class="py-12 border-t border-[#2B2A2A]/10 text-center text-sm opacity-50">
-        <strong>&copy; Far! - Pragmatical Vibe Programmer.</strong>
-    </footer>
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">03 / TECH STACK</p><h2>Tools yang saya gunakan</h2></div>
+          <p>Level kemampuan berdasarkan pengalaman belajar dan project yang sudah saya kerjakan.</p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card"><div class="stack-icon">FE</div><h3>Frontend</h3><p>HTML <b>mahir</b> · CSS <b>lumayan</b> · JavaScript <b>cukup paham</b></p><div class="chips"><span>React</span><span>Tailwind</span><span>Bootstrap</span><span>jQuery</span></div></article>
+          <article class="stack-card"><div class="stack-icon">BE</div><h3>Backend</h3><p>Node.js <b>paham dasarnya</b> · Laravel <b>cukup paham</b></p><div class="chips"><span>Node.js</span><span>Laravel</span></div></article>
+          <article class="stack-card"><div class="stack-icon">BA</div><h3>Backend as a Service</h3><p>Pengalaman menggunakan service berbasis API untuk kebutuhan data sederhana.</p><div class="chips"><span>JSONBin</span></div></article>
+          <article class="stack-card"><div class="stack-icon">DB</div><h3>Database</h3><p>MySQL <b>cukup paham</b> · PostgreSQL <b>paham dasarnya</b> · SawitDB <b>cukup paham</b></p><div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>SawitDB</span></div></article>
+          <article class="stack-card"><div class="stack-icon">DS</div><h3>Database as a Service</h3><p>Menggunakan database cloud untuk aplikasi dan eksperimen project.</p><div class="chips"><span>Supabase</span></div></article>
+          <article class="stack-card"><div class="stack-icon">DX</div><h3>DevOps & Tools</h3><p>Git & GitHub <b>lumayan</b> · Vercel <b>paham dasarnya</b></p><div class="chips"><span>Git</span><span>GitHub</span><span>Vercel</span></div></article>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-<div class="fixed bottom-[6.5rem] left-6 md:bottom-8 md:left-8 z-50 flex flex-col items-end gap-3">
-    <button id="night-toggle" class="bg-[#2B2A2A] text-[#F5F2F2] w-12 h-12 md:w-14 md:h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-[#5A7ACD] active:scale-90 transition-all duration-300 border-2 border-transparent">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-        </svg>
-    </button>
-</div>
-	<div class="fixed bottom-[6.5rem] right-6 md:bottom-8 md:right-8 z-50 flex flex-col items-end gap-3">
-    <div id="now-playing" class="opacity-0 translate-y-2 pointer-events-none transition-all duration-500 bg-[#2B2A2A] text-[#F5F2F2] px-4 py-2 rounded-xl text-[10px] md:text-xs font-bold shadow-2xl border border-[#5A7ACD]/30 whitespace-nowrap">
-        <span class="text-[#FEB05D] uppercase">Tenxi -</span> <span id="song-title" class="uppercase">Bintang 5</span>
-    </div>
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">04 / PROJECTS</p><h2>Beberapa yang pernah saya bangun</h2></div>
+          <a class="text-link" href="https://github.com/Reyynald17" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-large">
+            <div class="project-image"><img src="map.jpeg" alt="Peta Arcadia Nation Roleplay" loading="lazy"><span>01</span></div>
+            <div class="project-info"><div><span class="project-type">Community / Web</span><h3>Arcadia Nation Roleplay</h3></div><p>Platform komunitas roleplay yang saya kembangkan dan kelola, dengan fokus pada pengalaman bermain yang terstruktur dan imersif.</p></div>
+          </article>
+          <article class="project-card">
+            <div class="project-image"><img src="lanpage.png" alt="Arcadia Calculation System" loading="lazy"><span>02</span></div>
+            <div class="project-info"><div><span class="project-type">Web App</span><h3>Arcadia Calculation System</h3></div><p>Sistem perhitungan untuk membantu analisis command dan mendapatkan nilai AP per roleplayer di Arcadia.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <audio id="bg-music" loop>
-        <source src="song.mp3" type="audio/mpeg">
-    </audio>
+    <section class="contact-section" id="contact">
+      <div class="container contact-box">
+        <div><p class="section-kicker">05 / CONTACT</p><h2>Mari buat sesuatu yang menarik.</h2><p>Terbuka untuk belajar, berkolaborasi, dan mengembangkan project baru.</p></div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/Reyynald17" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a class="button secondary" href="mailto:farandaltafemian@gmail.com">Email Saya</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <button id="music-toggle" class="bg-[#2B2A2A] text-[#F5F2F2] w-12 h-12 md:w-14 md:h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-[#5A7ACD] active:scale-90 transition-all duration-300 border-2 border-transparent">
-        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-    </button>
-</div>
+  <footer class="footer">
+    <div class="container footer-inner"><span>© 2026 Farand Altaf Emian</span><span>Built with HTML · CSS · JavaScript</span></div>
+  </footer>
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti tema">☾</button>
+  <script src="script.js"></script>
 </body>
 </html>
