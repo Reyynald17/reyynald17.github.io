@@ -9,22 +9,17 @@
 
 ---
 
-### 🛠️ Tentang Saya & Filosofi Pengembangan
+Tentang Saya
 
 Saya adalah **Developer Arcadia** yang menggabungkan **Tenaga Manusia** dengan **Kecerdasan Buatan (AI)** untuk menciptakan solusi yang unik dan efisien.
 
 * **Proyek Utama Saat Ini:**
     * Fokus penuh pada pengembangan **Arcadian Roleplay Community**—membangun pengalaman roleplay yang mendalam dan terintegrasi.
+    * Fokus baru pada pengembangan **Arcadia : For All Mankind** — Sebuah Project yang akan memberikan pengalaman Roleplay yang otonom, tanpa membebankan tugas Game Master utama di Arcadia! (terinspirasi dari Series Apple TV *"For All Mankind"*)
 
 ---
 
-### ⚡ Fun Facts (Fakta Menarik)
-
-* Saya seorang **Apatheist**. Hidup di lingkungan yang mayoritas Muslim adalah tantangan yang menarik, but thats me, Fokus saya tetap pada pembangunan dan kode.
-  
----
-
-### 💻 Language dan Toolset Favorit
+### Language dan Toolset Favorit
 
 | Kategori | Teknologi | Deskripsi |
 | :--- | :--- | :--- |
